@@ -1,0 +1,58 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	/* font-family: "Times New Roman", Times, serif; */
+	font-size: 0.9rem;
+}
+h5{
+	font-size: 1.2rem;
+}
+.nav-sidebar>.nav-header{
+	font-weight:bold;
+	margin-bottom: 0.2rem;
+}
+.nav-sidebar>.nav-header>span{
+	
+}
+.nav-sidebar>.breakline{
+	border-bottom:1px dashed #CCC ;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+}
+/**/
+.brand-text{
+	color:#0b499c;
+}
+#class_list .widget-user .widget-user-username{
+	font-size:1.2rem;
+}
+#class_list .widget-user .widget-user-desc{
+	font-size:1rem;
+}
+
+/*Class*/
+#summary {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+#summary section.collapse:not(.show) {
+	height: 200px !important;
+	overflow: hidden;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+}
+
+#summary section.collapsing {
+	min-height: 200px !important;
+}
+
+#summary a.collapsed:after  {
+	content: '+ Xem thêm';
+}
+
+#summary a:not(.collapsed):after {
+	content: '- Rút gọn';
+}
+  
