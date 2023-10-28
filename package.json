@@ -1,13 +1,11 @@
 {
   "name": "edusoft",
   "version": "1.0.0",
-
   "description": "File Manager for EduSoft",
   "main": "app.js",
   "scripts": {
-
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "author": "hoat",

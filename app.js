@@ -4,7 +4,7 @@ const port=3060
 const host='localhost'
 const ejs= require('ejs')
 app.set('view engine','ejs')
-app.use(express.static('public'))
+app.use("/public",express.static('public'))
 app.listen(port,host,(err)=>{
     if(err) console.log(err);
     else console.log(`Server is running on : http://${host}:${port}`)
