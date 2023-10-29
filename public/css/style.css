@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.9rem;
+    background-color: #f4f6f9;
+  }
+a {
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.folder-name{
+    width: 80%;
+}
+.action span{
+    font-size: 15px;
+}
+.folder-name .name{
+    line-height: 100%;
+}
+.left-document .btn{
+    padding: 0;
+    text-align: start;   
+}
+.right-document .all-document .btn{
+    padding: 0;
+    text-align: start;
+
+}
+.right-document .work-folder .card-head .btn span,i {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.right-document .work-folder .card-body th , td{
+ font-size: 13px;
+}
+.right-document .work-folder .card-body td button{
+    background: none;
+}
+.right-document .work-folder .card-body td button i{
+    font-size: 16px;
+}

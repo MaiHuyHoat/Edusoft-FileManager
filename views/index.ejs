@@ -1,328 +1,577 @@
-<!DOCTYPE html>
-<html lang="en" style="height: auto;"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+!
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Quản lý File</title>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NỀN TẢNG QUẢN LÝ HỌC TẬP EDUSOFT</title>
-  <!-- base href="http://edusoft.vn/" -->
-    <link rel="shortcut icon" href="assets/icon.png">
-    <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="assets/css.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="public/assets/css.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="assets/css2.css" rel="stylesheet">
+  <link href="public/assets/css2.css" rel="stylesheet">
 
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/all.min.css">
+  <link rel="stylesheet" href="public/assets/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
   <!-- Ionicons -->
-  <link rel="stylesheet" href="assets/ionicons.min.css">
+  <link rel="stylesheet" href="public/assets/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="assets/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="public/assets/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="assets/icheck-bootstrap.min.css">
-  
+  <link rel="stylesheet" href="public/assets/icheck-bootstrap.min.css">
+
   <!-- JQVMap -->
-  <link rel="stylesheet" href="assets/jqvmap.min.css">
+  <link rel="stylesheet" href="public/assets/jqvmap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="assets/adminlte.min.css">
+  <link rel="stylesheet" href="public/assets/adminlte.min.css">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="assets/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="public/assets/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="assets/daterangepicker.css">  
-  <link rel="stylesheet" href="assets/toastr.min.css">  
-  <link rel="stylesheet" href="<%= typeof css!==undefined? `assets/css/`+css+`.css`:'' %>">  
-  <!-- summernote 
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
-	
-	<link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
-	-->
-	<link rel="stylesheet" href="assets/custom.css">
-				
-	<!-- jQuery -->
-	<script src="assets/jquery.min.js"></script>
-	<!-- jQuery UI 1.11.4 -->
-	<script src="assets/jquery-ui.min.js"></script>
-	<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-	<script>
-	  $.widget.bridge('uibutton', $.ui.button)
-	</script>
-	<!-- Bootstrap 4 -->
-	<script src="assets/bootstrap.bundle.min.js"></script>
-	<script src="assets/toastr.min.js"></script>
-	<!-- AdminLTE App -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="public/assets/daterangepicker.css">
+  <link rel="stylesheet" href="public/assets/toastr.min.css">
+  <!-- Bootstrap CSS -->
 
-	
-	<script type="text/javascript" src="assets/ckfinder.js"></script>
-	<!-- Google tag (gtag.js) -->
-<script async="" src="assets/js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" stype="text/css" href="/public/css/style.css" />
+</head>
 
-  gtag('config', 'G-CLSEQMB68M');
-</script>
-<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
-<body class="sidebar-mini layout-fixed accent-primary" style="height: auto;"><div class="wrapper">
-<!-- Preloader -->
-<div class="preloader flex-column justify-content-center align-items-center" style="height: 0px;">
-    <img class="animation__shake" src="assets/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60" style="display: none;">
-  </div>
+<body>
+  <div class="">
+    <section>
+      <div>
+        <h3>Tài liệu giảng dạy</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4 left-document ">
+          <div class="card">
+            <div class="card-header bg-info">
+              <h4> Môn học /Chủ đề (226)</h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li class="d-flex">
+                  <div class="d-flex folder-name btn">
+                    <div class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình di động <span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action  ">
+                    <div class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
 
-  <!-- Navbar -->  
-  
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-primary navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link text-white" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="javascript:void(0)" class="nav-link text-white">Trang chủ</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="javascript:void(0)" class="nav-link text-white">Liên hệ</a>
-      </li>
-	  <li class="nav-item d-none d-sm-inline-block">
-        <a href="http://edusoft.vn/sign_out.html" class="nav-link text-white">
-				Thoát			</a>
-      </li>
-    </ul>
+                      <span class="fas fa-plus fa-xs " data-toggle="modal" data-level="2" data-parent="291" data-path="291" data-target="#modal-subject"></span>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link text-white" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          
-          <div class="dropdown-divider"></div>
-          <a href="javascript:void(0)" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                    <div class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal" data-target="#modal-edit-topic" data-id="291" data-name="Lập trình di động" data-path="" class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291" item-name="Lập trình di động" data-path="291" class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="d-flex">
+                  <div class="d-flex folder-name btn">
+                    <div class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình JAVA <span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action  ">
+                    <div class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                      <span class="fas fa-plus fa-xs " data-toggle="modal" data-level="2" data-parent="291" data-path="291" data-target="#modal-subject"></span>
+
+                    </div>
+                    <div class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal" data-target="#modal-edit-topic" data-id="291" data-name="Lập trình di động" data-path="" class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291" item-name="Lập trình di động" data-path="291" class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="d-flex">
+                  <div class="d-flex folder-name btn">
+                    <div class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      UML<span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action  ">
+                    <div class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                      <span class="fas fa-plus fa-xs " data-toggle="modal" data-level="2" data-parent="291" data-path="291" data-target="#modal-subject"></span>
+
+                    </div>
+                    <div class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal" data-target="#modal-edit-topic" data-id="291" data-name="Lập trình di động" data-path="" class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291" item-name="Lập trình di động" data-path="291" class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="d-flex">
+                  <div class="d-flex folder-name btn">
+                    <div class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình hướng đối tượng <span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action  ">
+                    <div class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                      <span class="fas fa-plus fa-xs " data-toggle="modal" data-level="2" data-parent="291" data-path="291" data-target="#modal-subject"></span>
+
+                    </div>
+                    <div class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal" data-target="#modal-edit-topic" data-id="291" data-name="Lập trình di động" data-path="" class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291" item-name="Lập trình di động" data-path="291" class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="d-flex">
+                  <div class="d-flex folder-name btn">
+                    <div class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình di động <span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action  ">
+                    <div class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                      <span class="fas fa-plus fa-xs " data-toggle="modal" data-level="2" data-parent="291" data-path="291" data-target="#modal-subject"></span>
+
+                    </div>
+                    <div class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal" data-target="#modal-edit-topic" data-id="291" data-name="Lập trình di động" data-path="" class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291" item-name="Lập trình di động" data-path="291" class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </li>
+              </ul>
+
+            </div>
+          </div>
         </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link text-white" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">0</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">0 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="javascript:void(0)" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" data-widget="fullscreen" href="javascript:void(0)" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link text-white" data-toggle="dropdown" href="#">
-			<i class="far fa-user"></i>
-		</a><a>
-		</a><div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"><a>
-      </a><a href="http://edusoft.vn/account.html" class="nav-link">
-        <i class="fas fa-user mr-2"></i>
-        Thông tin cá nhân
-      </a>
-      <a href="http://edusoft.vn/change_password.html" class="nav-link">
-        <i class="fas fa-lock mr-2"></i>
-        Đổi mật khẩu
-      </a>
-      <a href="http://edusoft.vn/sign_out.html" class="dropdown-item">
-        <i class="fas fa-sign-out-alt mr-2"></i>
-				Thoát			</a>
-		</div>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->  <!-- Sidebar -->
-  
-<!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-light-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="javascript:void(0)" class="brand-link bg-light">
-      <img src="assets/icon.png" alt="Edusoft Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-bold">EDUSOFT</span>
-    </a>
+        <div class="col-md-7 right-document">
+          <div class="all-folder">
+            <div class="card card-outline card-primary ">
+              <div class="card-head d-flex">
+                <div class="m-2 btn h6">
+                  <i class="fas fa-level-up-alt"></i>
+                </div>
+                <ul class="d-flex flex-wrap h-100 w-100">
 
-    <!-- Sidebar -->
-    <div class="sidebar" style="overflow-y: auto;">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="assets/no_avatar.png" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="http://edusoft.vn/account.html" class="d-block">nmhuy86</a>
+                  <li class="d-flex btn ml-3">
+
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình di động <span> (42)</span>
+                  </li>
+                  <li class="d-flex btn ml-3">
+
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      UML <span> (42)</span>
+                  </li>
+                  <li class="d-flex btn ml-3">
+
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình hướng đối tượng <span> (42)</span>
+                  </li>
+                  <li class="d-flex btn ml-3">
+
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình di động <span> (42)</span>
+                  </li>
+                  <li class="d-flex btn ml-3">
+
+                    <div class="mr-1 d-flex align-items-center  ">
+                      <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                    </div>
+                    <div class=" h6 d-flex align-items-center justify-content-center h-100 text-primary">
+                      Lập trình JAVA <span> (42)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="work-folder">
+            <div class="card card-outline card-primary">
+              <div class="card-head mt-3">
+                <ul class="d-flex">
+                  <li class="ml-2">
+                    <button id="uploadFile" class="btn border bg-light btn-sm">
+                      <i class="fa fa-upload" aria-hidden="true"></i>
+                      <span> Upload</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button id="viewFile" class="btn border bg-light btn-sm">
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                      <span>View</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button id="dowloadFile" class="btn border bg-light btn-sm">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      <span> Dowload</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button id="editFile" class="btn border bg-light btn-sm">
+                      <i class="fas fa-edit    "></i>
+                      <span> Edit</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button id="coppyFile" class="btn border bg-light btn-sm">
+                      <i class="fas fa-copy    "></i>
+                      <span> Copy</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button class="btn border bg-light btn-sm">
+                      <img src="public/img/icon/folder_move_to_icon.png" width="16px" height="16px" alt="">
+                      <span>Move</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button class="btn border bg-light btn-sm">
+                      <img src="public/img/icon/icons8-rename-50.png" width="16px" height="16px" alt="">
+                      <span>Rename</span>
+                    </button>
+                  </li>
+                  <li class="ml-2">
+                    <button class="btn border bg-light btn-sm">
+                      <i class="fa fa-trash" aria-hidden="true"></i>
+                      <span>Delete</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <table class="table ">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tên Folder/File</th>
+                      <th scope="col">
+                        <span>Kích thước</span>
+                        <i class="fas fa-arrow-to-bottom    "></i>
+                      </th>
+                      <th scope="col">Hành động</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                          </div>
+                          <div>
+                            <span>Document</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <i class="fa fa-folder text-warning" aria-hidden="true"></i>
+                          </div>
+                          <div>
+                            <span>Music</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <i class="fa fa-music text-danger" aria-hidden="true"></i>
+                          </div>
+                          <div>
+                            <span>Lâu đài tình ái</span> <span>.mp3</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                           <i class="fas fa-video text-primary   "></i>
+                          </div>
+                          <div>
+                            <span>Lâu đài tình ái</span> <span>.mp4</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <img src="https://images2.thanhnien.vn/Uploaded/tuyenth/2022_08_11/2-9544.jpg" width="18px" height="18px" alt="">
+                          </div>
+                          <div>
+                            <span>DichLeNhietba</span><span>.jpg</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <img src="/public/img/icon/excel.png" width="18px" height="18px" alt="">
+
+                          </div>
+                          <div>
+                            <span>DiemSo</span><span>.xxl</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <img src="/public/img/icon/word.png" width="18px" height="18px" alt="">
+
+                          </div>
+                          <div>
+                            <span>KeHoach</span><span>.doc</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <img src="/public/img/icon/ppt.png" width="18px" height="18px" alt="">
+
+                          </div>
+                          <div>
+                            <span>slideThuyetTrinh</span><span>.ppt</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <div class="mr-1 d-flex align-items-center  ">
+                            <i class="fas fa-file-alt" ></i>
+
+                          </div>
+                          <div>
+                            <span>filekhac</span><span>.txt</span>
+                          </div>
+                        </div>
+
+                      </td>
+                      <td>
+                        24 <span>KB</span>
+                      </td>
+                      <td>
+                        <button class="border-0 d-flex justify-content-center ml-3">
+                          <div class="container"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-testid="MoreVertOutlinedIcon" class="svg-icon icon-md" height="1em" width="1em">
+                              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg></div>
+
+                        </button>
+
+                      </td>
+                    </tr>
+
+
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
-			<!-- Add icons to the links using the .nav-icon class
-			   with font-awesome or any other icon font library -->
-															<li class="nav-header">
-				<span class="">PHÂN HỆ DỮ LIỆU</span>
-			</li>
-											<li class="nav-item">
-					<a href="http://edusoft.vn/document_manager.html" class="nav-link active">
-						<i class="nav-icon fas fa-book"></i>
-					  <p>
-						Tài liệu giảng dạy					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/quan-ly-cau-hoi.html" class="nav-link">
-						<i class="nav-icon far fa-question-circle"></i>
-					  <p>
-						Ngân hàng câu hỏi					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/nhap-cau-hoi-tu-excel.html" class="nav-link">
-						<i class="nav-icon fas fa-file-import"></i>
-					  <p>
-						Nhập câu hỏi từ Excel					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/calendar.html" class="nav-link">
-						<i class="nav-icon far fa-calendar-alt"></i>
-					  <p>
-						Lịch tuần					  </p>
-					</a>
-				</li>
-										 												<li class="breakline my-2"></li>			<li class="nav-header">
-				<span class="">PHÂN HỆ DẠY HỌC</span>
-			</li>
-											<li class="nav-item">
-					<a href="http://edusoft.vn/ds_lop.html" class="nav-link">
-						<i class="nav-icon fas fa-list"></i>
-					  <p>
-						Lớp học của tôi					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/export-schedule.html" class="nav-link">
-						<i class="nav-icon fas fa-chalkboard-teacher"></i>
-					  <p>
-						Lịch trình giảng dạy					  </p>
-					</a>
-				</li>
-										 												<li class="breakline my-2"></li>			<li class="nav-header">
-				<span class="">PHÂN HỆ ĐÁNH GIÁ</span>
-			</li>
-											<li class="nav-item">
-					<a href="http://edusoft.vn/cau-truc-de-thi.html" class="nav-link">
-						<i class="nav-icon fas fa-layer-group"></i>
-					  <p>
-						Tạo Cấu trúc/ Đề thi tự động					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/contest_manager.html" class="nav-link">
-						<i class="nav-icon fas fa-list-alt"></i>
-					  <p>
-						Tổ chức các cuộc thi					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/report.html" class="nav-link">
-						<i class="nav-icon fas fa-chart-pie"></i>
-					  <p>
-						Báo cáo -thống kê					  </p>
-					</a>
-				</li>
-										 												<li class="breakline my-2"></li>			<li class="nav-header">
-				<span class="">PHÂN HỆ TƯƠNG TÁC</span>
-			</li>
-											<li class="nav-item">
-					<a href="javascript:void(0)" class="nav-link">
-						<i class="nav-icon far fa-handshake"></i>
-					  <p>
-						Tài liệu được chia sẻ					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/shared_class.html" class="nav-link">
-						<i class="nav-icon fas fa-share-square"></i>
-					  <p>
-						Lớp học được chia sẻ					  </p>
-					</a>
-				</li>
-										 												<li class="breakline my-2"></li>			<li class="nav-header">
-				<span class="">HỆ THỐNG</span>
-			</li>
-											<li class="nav-item">
-					<a href="http://edusoft.vn/setting.html" class="nav-link">
-						<i class="nav-icon far fa-image"></i>
-					  <p>
-						Cấu hình chung					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a target="_blank" href="http://edusoft.vn/helper.html" class="nav-link">
-						<i class="nav-icon fas fa-info"></i>
-					  <p>
-						Hướng dẫn sử dụng					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/?page=package_word" class="nav-link">
-						<i class="nav-icon far fa-image"></i>
-					  <p>
-						Dịch ngôn ngữ					  </p>
-					</a>
-				</li>
-															<li class="nav-item">
-					<a href="http://edusoft.vn/manage_helper.html" class="nav-link">
-						<i class="nav-icon far fa-image"></i>
-					  <p>
-						Quản lý HD sử dụng					  </p>
-					</a>
-				</li>
-										 						        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" style="min-height: 851.4px;">
-    <%- include(`pages/${page}`) %>
- </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright © 2023 <a href="https://edusoft.vn/">VIỆN PHÁT TRIỂN CÔNG NGHỆ VÀ GIÁO DỤC EDUSOFT</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 1.0
-    </div>
-  </footer>
+    </section>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  <div class="p-3 control-sidebar-content"><h5>Customize</h5><hr class="mb-2"><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div><h6>Header Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div><h6>Sidebar Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Nav Child Indent</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span></div><h6>Footer Options</h6><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><h6>Small Text Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div><h6>Navbar Variants</h6><div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-primary"><option class="bg-primary" selected="selected">Primary</option><option class="bg-secondary">Secondary</option><option class="bg-info">Info</option><option class="bg-success">Success</option><option class="bg-danger">Danger</option><option class="bg-indigo">Indigo</option><option class="bg-purple">Purple</option><option class="bg-pink">Pink</option><option class="bg-navy">Navy</option><option class="bg-lightblue">Lightblue</option><option class="bg-teal">Teal</option><option class="bg-cyan">Cyan</option><option class="bg-dark">Dark</option><option class="bg-gray-dark">Gray dark</option><option class="bg-gray">Gray</option><option class="bg-light">Light</option><option class="bg-warning">Warning</option><option class="bg-white">White</option><option class="bg-orange">Orange</option></select></div><h6>Accent Color Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option selected="selected">None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Dark Sidebar Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 text-light border-0"><option selected="selected">None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Light Sidebar Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary"><option>None Selected</option><option class="bg-primary" selected="selected">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Brand Logo Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option selected="selected">None Selected</option><option class="bg-primary">Primary</option><option class="bg-secondary">Secondary</option><option class="bg-info">Info</option><option class="bg-success">Success</option><option class="bg-danger">Danger</option><option class="bg-indigo">Indigo</option><option class="bg-purple">Purple</option><option class="bg-pink">Pink</option><option class="bg-navy">Navy</option><option class="bg-lightblue">Lightblue</option><option class="bg-teal">Teal</option><option class="bg-cyan">Cyan</option><option class="bg-dark">Dark</option><option class="bg-gray-dark">Gray dark</option><option class="bg-gray">Gray</option><option class="bg-light">Light</option><option class="bg-warning">Warning</option><option class="bg-white">White</option><option class="bg-orange">Orange</option><a href="#">clear</a></select></div></aside>
-  <!-- /.control-sidebar -->
-<div id="sidebar-overlay"></div></div>
-<!-- ./wrapper -->
-<script src="assets/adminlte.js"></script>
-<script src="assets/demo.js"></script>
-
-
-
-</body></html>
+</html>

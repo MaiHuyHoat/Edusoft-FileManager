@@ -10,9 +10,7 @@ app.listen(port,host,(err)=>{
     else console.log(`Server is running on : http://${host}:${port}`)
 })
 
-const documentManagerRoute= require('./routes/documentManager.route')
+const indexRoute= require('./routes/index.route')
 
-app.get('/',(req,rsp)=>{
-    rsp.send("hello world")
-})
-app.use('/documents',documentManagerRoute);
+
+app.use('/',indexRoute);
