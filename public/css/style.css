@@ -29,6 +29,9 @@ ul li{
     padding: 0;
     text-align: start;   
 }
+
+
+
 .right-document .all-document .btn{
     padding: 0;
     text-align: start;
@@ -47,4 +50,10 @@ ul li{
 }
 .right-document .work-folder .card-body td button i{
     font-size: 16px;
+}
+.border-file{
+
+    border: 1px solid rgb(68, 114, 250)  ;
+    border-top: 3px solid rgb(68, 114, 250);
+    border-bottom: 3px solid rgb(68, 114, 250) ;
 }

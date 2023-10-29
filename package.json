@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Quan ly File",
   "main": "app.js",
+  "link-web":"https://edusoft-filemanage.onrender.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
