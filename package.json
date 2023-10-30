@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "Quan ly File",
   "main": "app.js",
-  "link-web":"https://edusoft-filemanage.onrender.com",
+  "link-web": "https://edusoft-filemanage.onrender.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=18" 
+    "node": ">=18"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaiHuyHoat/Edusoft-FileManager.git"
@@ -25,6 +24,7 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7"
   }
 }
