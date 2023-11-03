@@ -53,16 +53,28 @@ function changeShowActionWithFile(file){
     }
     
 }
-function changeIArrow(folder){
-    var angleArrow= folder.querySelector('i');
-      if(angleArrow.classList.contains("fa-angle-right")){
-        angleArrow.classList.remove("fa-angle-right")
-        angleArrow.classList.add("fa-angle-down")
-      }else{
-        angleArrow.classList.remove("fa-angle-down")
-        angleArrow.classList.add("fa-angle-right")
-       
-      }
-    
+function changeIArrow(folder) {
+  var angleArrow = folder.querySelector('i');
 
+  if (angleArrow.classList.contains("fa-angle-right")) {
+    angleArrow.classList.remove("fa-angle-right");
+    angleArrow.classList.add("fa-angle-down");
+  } else {
+    angleArrow.classList.remove("fa-angle-down");
+    angleArrow.classList.add("fa-angle-right");
+  }
+
+  var img = folder.querySelector("img");
+  var imgSrc = img.getAttribute("src");
+
+  if (imgSrc.includes("folder.png")) {
+    img.setAttribute("src", "/public/img/icon/folder_open.png");
+    img.setAttribute("width","18px");
+    img.setAttribute("height","18px")
+
+  } else {
+    img.setAttribute("src", "/public/img/icon/folder.png");
+    img.setAttribute("width","14.5px");
+    img.setAttribute("height","14.5px")
+  }
 }
