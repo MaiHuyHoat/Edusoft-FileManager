@@ -18,6 +18,7 @@ global.__pathStorage="storage"
 // Các route sử dụng trong dự án
 const indexRoute= require('./routes/index.route')
 const shareFileRoute= require('./routes/share_file.route')
-
+const apiTest= require("./routes/api.test.route")
 app.use('/',indexRoute);
 app.use('/share',shareFileRoute)
+app.use('/api',apiTest)
