@@ -1,8 +1,10 @@
 const conn= require("../database/connect_database")
 
 class User{
- constructor(id,memory_used,package_id,create,updated,deleted){
+ constructor(id,name,email,memory_used,package_id,create,updated,deleted){
     this.id=id
+    this.name=name
+    this.email=email
     this.memory_used= memory_used
     this.package_id= package_id
     this.create=create

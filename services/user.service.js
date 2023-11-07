@@ -7,5 +7,8 @@ class UserService extends BaseService{
   async getAllUser(){
     return await super.getAll("user");
   }
+  async getDetailUserById(id){
+    return await super.getDetail("user",id)
+  }
 }
 module.exports=UserService;

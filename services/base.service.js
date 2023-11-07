@@ -15,6 +15,15 @@ class BaseService{
        })
        })
    }
+   getDetail(table,id){
+    return new Promise((resolve,reject)=>{
+        let sql= `SELECT * FROM ${table} WHERE id=${id} LIMIT 1 `;
+        this.conn.query(sql,(err,rs)=>{
+            if(err) reject(`Không lấy được chi tiết object có id:${id} trong bảng ${table}`)
+            else resolve(rs);
+        })
+    })
+   }
 
 }
 module.exports=BaseService;
