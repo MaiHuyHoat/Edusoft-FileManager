@@ -78,3 +78,6 @@ function changeIArrow(folder) {
     img.setAttribute("height","14.5px")
   }
 }
+function uploadFile(){
+  
+}
