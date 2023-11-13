@@ -21,22 +21,24 @@ class Folder {
                     reject("Không lấy được người dùng");
                 } else {
                     resolve(rs);
+                    this.user=rs;
                 }
             });
         });
     }
 
-    getParentFolder() {
+    getSubFolder() {
         if (this.parent_id === null) {
             return Promise.resolve(null);
         } else {
             return new Promise((resolve, reject) => {
-                let sql = `SELECT * FROM folder WHERE id=${this.parent_id}`;
+                let sql = `SELECT * FROM folder WHERE parent_id=${this.parent_id}`;
                 conn.query(sql, (err, rs) => {
                     if (err) {
                         reject("Không lấy được thư mục cha");
                     } else {
                         resolve(rs);
+                        this.sub_folders=rs;
                     }
                 });
             });

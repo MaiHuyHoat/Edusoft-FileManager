@@ -10,5 +10,10 @@ class UserService extends BaseService{
   async getDetailUserById(id){
     return await super.getDetail("user",id)
   }
+  async getDetailUserByUserName(name){
+    var sql = `SELECT * FROM user u where u.name like '%${name}%' limit 1 `;
+    return await super.executeQuery("user",sql)
+
+  }
 }
 module.exports=UserService;

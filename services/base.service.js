@@ -1,3 +1,6 @@
+const { rejects } = require("assert");
+const { resolve } = require("path");
+
 class BaseService{
    constructor() {
     this.conn= require("../database/connect_database")
@@ -24,6 +27,15 @@ class BaseService{
         })
     })
    }
+   executeQuery(table,sql){
+    return new Promise((resolve,reject)=>{
+        this.conn.query(sql,(err,rs)=>{
+            if(err) reject(`Lỗi thực hiện truy vấn với bảng ${table}: `+err)
+            else resolve(rs)
+        })
+    })
+   }
+  
 
 }
 module.exports=BaseService;
