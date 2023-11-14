@@ -6,12 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 function getData() {
   var userName = "nmhuy";
-  fetch(`./api/getAllFolder/${userName}`, {
+  fetch(`./api/folder/getAllByUserName/${userName}`, {
     method: "get",
     "content-type": "application/json",
   })
     .then((res) => res.json())
     .then((data) => {
+      console.log(data)
+
       convertDataFolder(data, data[0], 0);
       // lấy root của cây thư mục
       var root = data[0];

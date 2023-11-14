@@ -1,0 +1,391 @@
+<div id="listView">
+    <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col" class="border-0">Tên Folder/File</th>
+            <th scope="col" class="border-0">
+              <span>Kích thước</span>
+              <i class="fas fa-arrow-to-bottom    "></i>
+            </th>
+            <th scope="col" class="border-0">Hành động</th>
+    
+          </tr>
+        </thead>
+        <tbody id="AllFile1">
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button" class="list-layout-file-item">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                  <img src="/public//img/icon/folder.png"
+                    width="14.5px" height="14.5px" alt>
+                </div>
+                <div>
+                  <span>Document</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+              <div class="dropdown-menu  "
+                aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item  p-0" href="#">
+                  <form action="#">
+                    <button
+                      class="d-block w-100 border-0 btn "> <i
+                        class="fa fa-upload"
+                        aria-hidden="true"></i>
+                      <span> Upload</span></button>
+                  </form>
+    
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                  <span>View</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  <span> Dowload</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <i class="fas fa-edit    "></i>
+                  <span> Edit</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <i class="fas fa-copy    "></i>
+                  <span> Copy</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <img
+                    src="public/img/icon/folder_move_to_icon.png"
+                    width="16px" height="16px" alt>
+                  <span>Move</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <img
+                    src="public/img/icon/icons8-rename-50.png"
+                    width="16px" height="16px" alt>
+                  <span>Rename</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  <span>Delete</span>
+                </div>
+                <div role="button" class="dropdown-item"
+                  href="#">
+                  <i class="fa fa-share" aria-hidden="true"></i>
+                  <span>Share</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button" class="list-layout-file-item">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                  <img src="/public//img/icon/folder.png"
+                    width="14.5px" height="14.5px" alt>
+                </div>
+                <div>
+                  <span>Music</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                   <img src="/public/img/icon/music.svg" alt="music icon" width="20px">
+                </div>
+                <div>
+                  <span>Lâu đài tình ái</span> <span>.mp3</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                 <img src="/public/img/icon/video.svg" alt="Video Icon" width="20px">
+                </div>
+                <div>
+                  <span>Lâu đài tình ái</span> <span>.mp4</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                  <img
+                    src="https://images2.thanhnien.vn/Uploaded/tuyenth/2022_08_11/2-9544.jpg"
+                    width="18px" height="18px" alt>
+                </div>
+                <div>
+                  <span>DichLeNhietba</span><span>.jpg</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                  <img src="/public/img/icon/excel.svg" alt="Excel icon" width="20px">
+    
+                </div>
+                <div>
+                  <span>DiemSo</span><span>.xxl</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                  <img src="/public/img/icon/word.svg" alt="Icon Doc" width="20px">
+    
+                </div>
+                <div>
+                  <span>KeHoach</span><span>.doc</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                  <img src="/public/img/icon/ppt.svg"
+                    width="20px" alt>
+    
+                </div>
+                <div>
+                  <span>slideThuyetTrinh</span><span>.ppt</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+          <tr>
+    
+            <td onclick="clickFileListLayout(2,this)" role="button">
+              <div class="d-flex">
+                <div class="mr-1 d-flex align-items-center  ">
+                 <img src="/public/img/icon/google-docs.png" alt="icon file " width="20px">
+    
+                </div>
+                <div>
+                  <span>filekhac</span><span>.txt</span>
+                </div>
+              </div>
+    
+            </td>
+            <td>
+              24 <span>KB</span>
+            </td>
+            <td>
+              <button
+                class="border-0 d-flex justify-content-center ml-3">
+                <div class="container"> <svg
+                    aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-testid="MoreVertOutlinedIcon"
+                    class="svg-icon icon-md" height="1em"
+                    width="1em">
+                    <path
+                      d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                  </svg></div>
+    
+              </button>
+    
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>
+</div>

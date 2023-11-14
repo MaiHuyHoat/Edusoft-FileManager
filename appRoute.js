@@ -2,7 +2,7 @@
 const index= require('./routes/index.route')
 const shareFile= require('./routes/share_file.route')
 const apiUser= require("./routes/api.user.route")
-const apiGetAllFolder= require("./routes/api.get_all_folder.route")
+const apiFolder= require("./routes/api.folder.route")
 const appRoutes=[
     {
         path:"/",
@@ -17,8 +17,8 @@ const appRoutes=[
         route: apiUser
     },
     {
-        path:"/api/getAllFolder",
-        route: apiGetAllFolder
+        path:"/api/folder",
+        route: apiFolder
     }
 ]
 module.exports=appRoutes

@@ -56,9 +56,29 @@ ul li{
 .right-document .work-folder .card-body td button i{
     font-size: 16px;
 }
-.border-file{
+.active-file{
 
-    border: 1px solid rgb(68, 114, 250)  ;
-    border-top: 3px solid rgb(68, 114, 250);
-    border-bottom: 3px solid rgb(68, 114, 250) ;
+   background-color: rgb(240 245 254);
+}
+
+@media (min-width:768px) {
+    #gridView{
+     display: block;
+
+    }
+    #listView{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    #gridView{
+        display: none;
+   
+       }
+       #listView{
+           display: block;
+       } 
+}
+#gridView .icon{
+  min-height: 150px;
 }
