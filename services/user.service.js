@@ -13,7 +13,7 @@ class UserService extends BaseService{
   async getDetailUserByUserName(name){
     var sql = `SELECT * FROM user u where u.name like '%${name}%' limit 1 `;
 
-    return await super.executeQuery("user",sql)
+    return await super.executeQuery(sql)
 
   }
 }

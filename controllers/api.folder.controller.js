@@ -6,9 +6,13 @@ class ApiFolder{
   }
   async getAllByUserName(req,res){
        var userName= req.params.userName;
-       var folders= await this.fService.getAllByUserName(userName);
-    
-       res.status(200).json(folders);
+       var listFolder= await this.fService.getAllByUserName(userName);
+       if(listFolder.length>0){
+        res.status(200).json(listFolder);
+       }else{
+        res.status(400).json([])
+       }
+
   }
 }
 module.exports = ApiFolder

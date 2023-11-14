@@ -27,7 +27,7 @@ class File {
         });
     }
 
-    getCategory() {
+     getCategory() {
         if (this.file_category_id === null) {
             return Promise.resolve(null);
         } else {
@@ -56,6 +56,23 @@ class File {
             });
         });
     }
+     async convertToJSON() {
+        return {
+            id: this.id,
+            name: this.name,
+            path: this.path,
+            size: this.size,
+            folder_id: this.folder_id,
+            file_category_id: this.file_category_id,
+            category: await this.getCategory(),
+            user_id: this.user_id,
+            owner:await this.getOwner(),
+            created: this.created,
+            updated: this.updated,
+            deleted: this.deleted
+        };
+    }
+    
 }
 
 module.exports = File;

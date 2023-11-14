@@ -27,10 +27,10 @@ class BaseService{
         })
     })
    }
-   executeQuery(table,sql){
+   executeQuery(sql){
     return new Promise((resolve,reject)=>{
         this.conn.query(sql,(err,rs)=>{
-            if(err) reject(`Lỗi thực hiện truy vấn với bảng ${table}: `+err)
+            if(err) reject(`Lỗi thực hiện truy vấn : `+err)
             else resolve(rs)
         })
     })

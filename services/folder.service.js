@@ -12,7 +12,7 @@ const Folder= require("../models/folder.model");
         var sql= `SELECT f.* FROM folder f INNER JOIN user u ON f.user_id=u.id where f.user_id=${userRs[0].id} `
 
 
-        return super.executeQuery("folder",sql);
+        return await super.executeQuery(sql);
  
 
     }

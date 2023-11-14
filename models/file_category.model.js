@@ -1,9 +1,10 @@
 const conn = require("../database/connect_database");
 
 class FileCategory {
-    constructor(id, name) {
+    constructor(id, name,image) {
         this.id = id;
         this.name = name;
+        this.image=image
     }
 
     getFilesInCategory() {

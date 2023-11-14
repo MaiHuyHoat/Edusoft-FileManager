@@ -1,9 +1,8 @@
 
-
-console.log("nhanj file tree folder");
 document.addEventListener("DOMContentLoaded", () => {
   getData();
 });
+
 function getData() {
   var userName = "nmhuy";
   fetch(`./api/folder/getAllByUserName/${userName}`, {
@@ -52,6 +51,7 @@ function generateFolder(node) {
     <!-- folder-name && action  -->
     <div class="d-flex tree-item justify-content-between">
       <div onclick="clickFolder(this)"
+      folderId=${node.id}
       class="d-flex folder-name btn"
                               data-toggle="collapse" href="#collapse${node.id}"
                               role="button" aria-expanded="false"
