@@ -67,7 +67,7 @@ function generateFolder(node) {
         </div>
         <div
           class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
-          ${node.name} <span> (${node.size} MB)</span>
+          ${node.name}  <span class=" ml-2 text-lowercase text-secondary" style="font-size:12px"> (${node.size} MB)</span>
         </div>
       </div>
       <div class="d-flex action  ">

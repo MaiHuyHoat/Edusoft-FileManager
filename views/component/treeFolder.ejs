@@ -1,0 +1,325 @@
+<div class="card mb-0 ">
+    <div class="card-header  text-dark  border-0">
+      <h6 style="font-weight: bold;"> Thư mục/ Folder</h3>
+    </div>
+    <div class="card-body pt-0 " id="user-folders">
+      <ul>
+        <li>
+
+          <!-- folder-name && action  -->
+          <div class="d-flex tree-item justify-content-between">
+            <div onclick="clickFolder(this)"
+              class="d-flex folder-name btn"
+              data-toggle="collapse" href="#collapseExample"
+              role="button" aria-expanded="false"
+              aria-controls="multiCollapseExample1">
+              <div
+                class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+              </div>
+              <div class="mr-1 d-flex align-items-center  ">
+                <img src="/public//img/icon/folder.png"
+                  width="14.5px" height="14.5px" alt>
+              </div>
+              <div
+                class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
+                Lập trình di động <span> (42)</span>
+              </div>
+            </div>
+            <div class="d-flex action  ">
+              <div
+                class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                <span class="fas fa-plus fa-xs "
+                  data-toggle="modal" data-level="2"
+                  data-parent="291" data-path="291"
+                  data-target="#modal-subject"></span>
+
+              </div>
+              <div
+                class="btn edit-folder-action mr-2 d-flex align-items-center">
+                <span data-toggle="modal"
+                  data-target="#modal-edit-topic" data-id="291"
+                  data-name="Lập trình di động" data-path
+                  class="fas fa-edit fa-xs "></span>
+              </div>
+              <div
+                class=" btn delete-folder-action d-flex align-items-center">
+                <span item-id="291"
+                  item-name="Lập trình di động" data-path="291"
+                  class="fas fa-trash-alt fa-xs "></span>
+              </div>
+            </div>
+
+          </div>
+          <!-- sub-folder && action  -->
+          <div class="collapse  tree-level-2"
+            id="collapseExample">
+            <ul>
+
+              <li>
+                <!-- folder-name && action  -->
+                <div
+                  class="d-flex justify-content-between tree-item">
+                  <div onclick="clickFolder(this)"
+                    class="d-flex folder-name btn"
+                    data-toggle="collapse"
+                    href="#collapseExample1" role="button"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample1">
+                    <div
+                      class="mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+                      <i class="fa fa-angle-right"
+                        aria-hidden="true"></i>
+                    </div>
+                    <div
+                      class="mr-1 d-flex align-items-center  ">
+                      <img src="/public//img/icon/folder.png"
+                        width="14.5px" height="14.5px" alt>
+                    </div>
+                    <div
+                      class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
+                      Tài liệu <span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action   ">
+                    <div
+                      class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                      <span class="fas fa-plus fa-xs "
+                        data-toggle="modal" data-level="2"
+                        data-parent="291" data-path="291"
+                        data-target="#modal-subject"></span>
+
+                    </div>
+                    <div
+                      class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal"
+                        data-target="#modal-edit-topic"
+                        data-id="291"
+                        data-name="Lập trình di động" data-path
+                        class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div
+                      class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291"
+                        item-name="Lập trình di động"
+                        data-path="291"
+                        class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- sub-folder && action  -->
+                <div class="collapse sub-folder tree-level-3 "
+                  id="collapseExample1">
+                  <ul>
+
+                    <li>
+                      <div
+                        class="d-flex tree-item justify-content-between">
+                        <div onclick="clickFolder(this)"
+                          class="d-flex folder-name btn">
+
+                          <div
+                            class="mr-1 d-flex align-items-center  ">
+                            <img
+                              src="/public//img/icon/folder.png"
+                              width="14.5px" height="14.5px" alt>
+                          </div>
+                          <div
+                            class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
+                            Flutter <span> (5)</span>
+                          </div>
+                        </div>
+                        <div class="d-flex action   ">
+                          <div
+                            class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                            <span class="fas fa-plus fa-xs "
+                              data-toggle="modal" data-level="2"
+                              data-parent="291" data-path="291"
+                              data-target="#modal-subject"></span>
+
+                          </div>
+                          <div
+                            class="btn edit-folder-action mr-2 d-flex align-items-center">
+                            <span data-toggle="modal"
+                              data-target="#modal-edit-topic"
+                              data-id="291"
+                              data-name="Lập trình di động"
+                              data-path
+                              class="fas fa-edit fa-xs "></span>
+                          </div>
+                          <div
+                            class=" btn delete-folder-action d-flex align-items-center">
+                            <span item-id="291"
+                              item-name="Lập trình di động"
+                              data-path="291"
+                              class="fas fa-trash-alt fa-xs "></span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+                      <div
+                        class="d-flex tree-item justify-content-between">
+                        <div onclick="clickFolder(this)"
+                          class="d-flex folder-name btn">
+
+                          <div
+                            class="mr-1 d-flex align-items-center  ">
+                            <img
+                              src="/public//img/icon/folder.png"
+                              width="14.5px" height="14.5px" alt>
+                          </div>
+                          <div
+                            class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
+                            Mobile JAVA <span> (10)</span>
+                          </div>
+                        </div>
+                        <div class="d-flex action   ">
+                          <div
+                            class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                            <span class="fas fa-plus fa-xs "
+                              data-toggle="modal" data-level="2"
+                              data-parent="291" data-path="291"
+                              data-target="#modal-subject"></span>
+
+                          </div>
+                          <div
+                            class="btn edit-folder-action mr-2 d-flex align-items-center">
+                            <span data-toggle="modal"
+                              data-target="#modal-edit-topic"
+                              data-id="291"
+                              data-name="Lập trình di động"
+                              data-path
+                              class="fas fa-edit fa-xs "></span>
+                          </div>
+                          <div
+                            class=" btn delete-folder-action d-flex align-items-center">
+                            <span item-id="291"
+                              item-name="Lập trình di động"
+                              data-path="291"
+                              class="fas fa-trash-alt fa-xs "></span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </li>
+
+                  </ul>
+
+                </div>
+              </li>
+              <li>
+                <!-- folder-name && action  -->
+                <div
+                  class="d-flex justify-content-between tree-item">
+                  <div onclick="clickFolder(this)"
+                    class="d-flex folder-name btn">
+                    <div
+                      class="leaf mr-2 text-center d-flex align-items-center  icon-angle-right-file">
+
+                    </div>
+                    <div
+                      class="mr-1 d-flex align-items-center  ">
+                      <img src="/public//img/icon/folder.png"
+                        width="14.5px" height="14.5px" alt>
+                    </div>
+                    <div
+                      class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
+                      Bài tập học sinh <span> (42)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex action   ">
+                    <div
+                      class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                      <span class="fas fa-plus fa-xs "
+                        data-toggle="modal" data-level="2"
+                        data-parent="291" data-path="291"
+                        data-target="#modal-subject"></span>
+
+                    </div>
+                    <div
+                      class="btn edit-folder-action mr-2 d-flex align-items-center">
+                      <span data-toggle="modal"
+                        data-target="#modal-edit-topic"
+                        data-id="291"
+                        data-name="Lập trình di động" data-path
+                        class="fas fa-edit fa-xs "></span>
+                    </div>
+                    <div
+                      class=" btn delete-folder-action d-flex align-items-center">
+                      <span item-id="291"
+                        item-name="Lập trình di động"
+                        data-path="291"
+                        class="fas fa-trash-alt fa-xs "></span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+
+        </li>
+        <li>
+
+          <!-- folder-name && action  -->
+          <div class="d-flex tree-item justify-content-between">
+            <div onclick="clickFolder(this)"
+              class="d-flex folder-name btn">
+              <div
+                class="mr-2 leaf text-center d-flex align-items-center  icon-angle-right-file">
+
+              </div>
+              <div class="mr-1 d-flex align-items-center  ">
+                <img src="/public//img/icon/folder.png"
+                  width="14.5px" height="14.5px" alt>
+              </div>
+              <div
+                class=" h6 d-flex align-items-center justify-content-center h-100 text-dark">
+                Cấu trúc dữ liệu và giải thuật <span> (22)</span>
+              </div>
+            </div>
+            <div class="d-flex action  ">
+              <div
+                class="add-folder-action mr-2 d-flex align-items-center pl-3 btn">
+
+                <span class="fas fa-plus fa-xs "
+                  data-toggle="modal" data-level="2"
+                  data-parent="291" data-path="291"
+                  data-target="#modal-subject"></span>
+
+              </div>
+              <div
+                class="btn edit-folder-action mr-2 d-flex align-items-center">
+                <span data-toggle="modal"
+                  data-target="#modal-edit-topic" data-id="291"
+                  data-name="Lập trình di động" data-path
+                  class="fas fa-edit fa-xs "></span>
+              </div>
+              <div
+                class=" btn delete-folder-action d-flex align-items-center">
+                <span item-id="291"
+                  item-name="Lập trình di động" data-path="291"
+                  class="fas fa-trash-alt fa-xs "></span>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>

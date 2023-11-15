@@ -1,0 +1,51 @@
+<!-- Modal -->
+<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mw-100">
+    <div class="modal-content container">
+      <div class="modal-header d-block">
+     
+          <div class="title ">
+            <div class="text-center h1 fw-bold" style="font-family: Roboto; font-weight: 500; word-wrap: break-word">Tải lên tệp tin </div>
+            <div class="text-center " style="color: #BEBEBE; font-size: 14px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">Tải lên tệp tin của bạn</div>
+            <div class="close-button">
+              <button type="button" class="btn btn-close  p-0" data-bs-dismiss="modal" aria-label="Close">
+                <img src="/public/img/icon/close-button-modal.png" width="41px" alt="">
+   
+              </button>
+            </div>
+           </div>
+           
+
+           
+        </button>
+      </div>
+      <div class="modal-body">
+        <SECTION>
+          <DIV id="dropzone">
+            <FORM class="dropzone needsclick" style="border:1px dashed rgb(113, 109, 109)lack; ;" id="demo-upload" action="/upload">
+               
+              <div class="dz-message needsclick">    
+                <div class="d-flex justify-content-center ">
+                  <div class="icon">
+                    <img src="public/img/icon/drag_and_drop_file.jpg" alt="" width="100px" height="80px">
+                  </div>
+             
+                 </div>
+                <div>Kéo và thả file để tải lên</div>
+                <SPAN class="note needsclick">
+                  <label for="file" class="btn bg-light border-primary text-primary fw-normal">Chọn tệp từ máy tính</label>
+                <input type="file" id="file" name="file"  class="btn btn-primary d-none" multiple>
+                
+                </SPAN>
+              </DIV>
+            </FORM>
+          </DIV>
+        </SECTION>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

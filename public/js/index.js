@@ -8,7 +8,7 @@
   generateFilesToUI(listFiles)
 }
 function clickFileListLayout(idFile, file) {
-  var AllFileTbody = document.querySelector("#AllFile1");
+  var AllFileTbody = document.querySelector("#listFiles");
   var allFile = AllFileTbody.querySelectorAll("tr");
   allFile.forEach((tr) => {
     var tdFile = tr.querySelector("td");
@@ -23,7 +23,7 @@ function clickFileListLayout(idFile, file) {
   changeShowActionWithFile(file);
 }
 function clickFileGridLayout(idFile, file) {
-  var AllFileTbody = document.querySelector("#AllFile2");
+  var AllFileTbody = document.querySelector("#gridFiles");
   var allFile = AllFileTbody.querySelectorAll("li .grid-layout-file-item");
 
   allFile.forEach((item) => {

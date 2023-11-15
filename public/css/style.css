@@ -3,6 +3,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: 0.9rem;
     background-color: #f4f6f9;
+    height: 100vh;
   }
 a {
     text-decoration: none;
@@ -59,6 +60,14 @@ ul li{
 .active-file{
 
    background-color: rgb(240 245 254);
+}
+ div.modal-header {
+    position: relative;
+}
+ div.modal-header div.close-button{
+    position: absolute;
+    top: 8px;
+    right: 0;
 }
 
 @media (min-width:768px) {
