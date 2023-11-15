@@ -54,6 +54,7 @@ td {
 }
 .active-file {
   background-color: rgb(240 245 254);
+  
 }
 div.modal-header {
   position: relative;

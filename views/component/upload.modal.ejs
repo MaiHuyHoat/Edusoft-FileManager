@@ -22,7 +22,8 @@
       <div class="modal-body">
         <SECTION>
           <DIV id="dropzone">
-            <FORM class="dropzone needsclick" style="border:1px dashed rgb(113, 109, 109)lack; ;" id="demo-upload" action="/upload">
+            <FORM class="dropzone needsclick" style="border:1px dashed rgb(113, 109, 109)lack; ;" id="uploadDropzone"
+             method="post" action="/api/file/upload" enctype="multipart/form-data">
                
               <div class="dz-message needsclick">    
                 <div class="d-flex justify-content-center ">
@@ -34,7 +35,7 @@
                 <div>Kéo và thả file để tải lên</div>
                 <SPAN class="note needsclick">
                   <label for="file" class="btn bg-light border-primary text-primary fw-normal">Chọn tệp từ máy tính</label>
-                <input type="file" id="file" name="file"  class="btn btn-primary d-none" multiple>
+          
                 
                 </SPAN>
               </DIV>

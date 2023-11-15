@@ -13,5 +13,22 @@ class ApiFile{
         }
     
   }
+  async createFile(req,res){
+    console.log("Có người upload file")
+     var idFolder= req.body.idFolder;
+    
+     if (!req.files || req.files.length === 0) {
+      return res.status(400).send('No file uploaded.');
+    }
+  
+    // Lặp qua danh sách các file và hiển thị thông tin
+    req.files.forEach((file, index) => {
+      console.log(`File #${index + 1} - Originalname: ${file.originalname}`);
+    });
+    
+    
+     res.status(200).json("Upload file thanh cong")
+     
+  }
 }
 module.exports= ApiFile

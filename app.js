@@ -6,6 +6,9 @@ app.set('view engine','ejs')
 app.use("/public",express.static('public'))
 app.use("/storage",express.static('storage'))
 
+// Sử dụng body-parser để xử lý dữ liệu form
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 // định nghĩa các tham số sử dụng trong toàn bộ dự án
 global.__pathStorage="storage"
 // Các route sử dụng trong dự án

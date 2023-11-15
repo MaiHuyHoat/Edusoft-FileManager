@@ -80,10 +80,10 @@ function changeShowActionWithFile(file) {
   if (file.classList.contains("grid-layout-file-item")) {
     if (!file.classList.contains("active-file")) {
       file.classList.add("active-file")
-      file.classList.add("border");
+      file.classList.add("border-primary");
     } else {
       file.classList.remove("active-file")
-      file.classList.remove("border");
+      file.classList.remove("border-primary");
       
     }
   }
