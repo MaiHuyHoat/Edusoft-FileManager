@@ -13,24 +13,24 @@
       <section class="h-100">
         <!-- header-nav -->
         <%- include("layout/header.ejs")%>
-        <div class="content bg-light h-100 mb-5">
-          <div class="card m-3 " style="height: 85vh;">
+        <div class="content bg-light h-100 m-3">
+          <div class="card  " style="height: 85vh;">
          
-            <div class="card-body p-0 ">
-              <div class="row h-100">
+            <div class="card-body p-0  ">
+              <div class="d-md-flex   h-100">
                 <div class="col-md-4 left-document pr-0 pl-0 ">
                   <%- include("./component/treeFolder.ejs") %>
                 </div>
                 <div class="col-md-8 right-document pl-0 h-100 pr-0">
 
                   <div class="work-folder h-100">
-                    <div class="card  h-100">
+                    <div class="card p-0  h-100">
                       <!-- action with file  -->
-                      <div class="card-header d-flex">
+                      <div class="card-header d-sm-none d-md-flex ">
                          <%-include("./component/action_file.ejs")%>
                        
                       </div>
-                      <div class="card-body border-0 overflow-auto ">
+                      <div class="card-body  border-0 overflow-auto ">
                          <%-include('component/listView_file.ejs') %>
                          <%-include('component/gridView_file.ejs') %>
                       </div>

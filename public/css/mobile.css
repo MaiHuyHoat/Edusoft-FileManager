@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+    #gridView{
+        display: none;
+   
+       }
+       #listView{
+           display: block;
+       } 
+       .d-sm-none{
+        display: none;
+       }
+}

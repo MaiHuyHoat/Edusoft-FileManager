@@ -1,93 +1,79 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 0.9rem;
-    background-color: #f4f6f9;
-    height: 100vh;
-  }
+  font-family: "Roboto", sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+  background-color: #f4f6f9;
+  height: 100vh;
+}
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-ul{
-    padding: 0;
-    margin: 0;
+ul {
+  padding: 0;
+  margin: 0;
 }
-ul li{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-
-
-
-
-.folder-name{
-    width: 80%;
-}
-.action span{
-    font-size: 15px;
-}
-.folder-name .name{
-    line-height: 100%;
-}
-.left-document .btn{
-    padding: 0;
-    text-align: start;   
+ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-
-
-.right-document .all-document .btn{
-    padding: 0;
-    text-align: start;
-
+.folder-name {
+  width: 80%;
 }
-.right-document .work-folder .card-head .btn span,i {
+.action span {
+  font-size: 15px;
+}
+.folder-name .name {
+  line-height: 100%;
+}
+.left-document .btn {
+  padding: 0;
+  text-align: start;
+}
+
+.right-document .all-document .btn {
+  padding: 0;
+  text-align: start;
+}
+.right-document .work-folder .card-head .btn span,
+i {
   font-size: 13px;
   font-weight: bold;
 }
 
-.right-document .work-folder .card-body th , td{
- font-size: 13px;
+.right-document .work-folder .card-body th,
+td {
+  font-size: 13px;
 }
-.right-document .work-folder .card-body td button{
-    background: none;
+.right-document .work-folder .card-body td button {
+  background: none;
 }
-.right-document .work-folder .card-body td button i{
-    font-size: 16px;
+.right-document .work-folder .card-body td button i {
+  font-size: 16px;
 }
-.active-file{
+.active-file {
+  background-color: rgb(240 245 254);
+}
+div.modal-header {
+  position: relative;
+}
+div.modal-header div.close-button {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
 
-   background-color: rgb(240 245 254);
+#gridView {
+  display: block;
 }
- div.modal-header {
-    position: relative;
+#listView {
+  display: none;
 }
- div.modal-header div.close-button{
-    position: absolute;
-    top: 8px;
-    right: 0;
+.d-md-block {
+  display: block;
 }
 
-@media (min-width:768px) {
-    #gridView{
-     display: block;
-
-    }
-    #listView{
-        display: none;
-    }
-}
-@media (max-width: 767px) {
-    #gridView{
-        display: none;
-   
-       }
-       #listView{
-           display: block;
-       } 
-}
-#gridView .icon{
+#gridView .icon {
   min-height: 150px;
 }
