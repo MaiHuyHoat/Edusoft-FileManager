@@ -10,7 +10,7 @@ class ApiFolder{
        if(listFolder.length>0){
         res.status(200).json(listFolder);
        }else{
-        res.status(400).json([])
+        res.status(200).json([])
        }
 
   }

@@ -23,7 +23,7 @@ class ApiFile{
   
     // Lặp qua danh sách các file và hiển thị thông tin
     req.files.forEach((file, index) => {
-      console.log(`File #${index + 1} - Originalname: ${file.originalname}`);
+      console.log("file upload : "+file.path)
     });
     
     

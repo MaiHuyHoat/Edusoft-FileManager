@@ -1,76 +1,32 @@
 <div id="gridView">
-    <ul id="gridFiles" class="d-flex justify-content-start flex-wrap ">
-      <li>
-        <div role="button"  onclick="clickFileGridLayout(1,this)" class="card grid-layout-file-item  ml-5" style="width: 13rem;height: 13rem;">
-          <div class="icon d-flex justify-content-center h-80">
-            <div class="img-icon pt-5 ">
-              <img  src="/public/img/icon/excel.svg" width="70px" height="70px" alt="icon Excel">
-            </div>
-          </div>
-          <div class="card-body">
+  <div id="loading" class="d-block"  style=" padding-top: 25vh; height: 70vh;">
+    <figure style="height: 100%;">
+      <div id="onLoadingImage" class="container " style="width: 50px; padding: 0;">
+        <img style="height: 50px;width: 50px;" src="/public/img//gif/onLoading.gif" alt="Loading..." >
+      </div>
 
-            <p class="card-text text-center">DiemSo.xlsx</p>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div role="button" onclick="clickFileGridLayout(1,this)" class="card grid-layout-file-item ml-5" style="width: 13rem;height: 13rem;">
-          <div class="icon d-flex justify-content-center h-80">
-            <div class="img-icon pt-5 ">
-              <img  src="/public/img/icon/ppt.svg" width="70px" height="70px" alt="icon Excel">
-            </div>
-          </div>
-          <div class="card-body">
-
-            <p class="card-text text-center">BaoCao.docx</p>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div role="button" onclick="clickFileGridLayout(1,this)" class="card grid-layout-file-item  ml-5" style="width: 13rem;height: 13rem;">
-          <div class="icon d-flex justify-content-center h-80">
-            <div class="img-icon pt-5 ">
-              <img  src="/public/img/icon/word.svg" width="70px" height="70px" alt="icon Excel">
-            </div>
-          </div>
-          <div class="card-body">
-
-            <p class="card-text text-center">BaoCao.docx</p>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div role="button" onclick="clickFileGridLayout(1,this)" class="card grid-layout-file-item  ml-5" style="width: 13rem;height: 13rem;">
-          <div class="icon d-flex justify-content-center h-80">
-            <div class="img-icon pt-5 ">
-              <img  src="/public/img/icon/video.svg" width="70px" height="70px" alt="icon Excel">
-            </div>
-          </div>
-          <div class="card-body">
-
-            <p class="card-text text-center">BaoCao.docx</p>
-
-          </div>
-        </div>
-      </li>
-      <li>
-        <div role="button" onclick="clickFileGridLayout(1,this)" class="card grid-layout-file-item  ml-5" style="width: 13rem;height: 13rem;">
-          <div class="icon d-flex justify-content-center h-80">
-            <div class="img-icon pt-5 ">
-              <img  src="/public/img/icon/music.svg" width="70px" height="70px" alt="icon Excel">
-            </div>
-          </div>
-          <div class="card-body">
-
-            <p class="card-text text-center">BaoCao.docx</p>
-
-          </div>
-        </div>
-      </li>
+      <figcaption style="text-align: center;">Đang tải dữ liệu</figcaption>
+    </figure>
    
-      
-    </ul>
+
+  </div>
+  <ul id="gridFiles" class="d-flex justify-content-start flex-wrap ">
+    <li>
+      <div role="button"  onclick="clickFileGridLayout(1,this)" class="card grid-layout-file-item  ml-5" style="width: 13rem;height: 13rem;">
+        <div class="icon d-flex justify-content-center h-80">
+          <div class="img-icon pt-5 ">
+            <img  src="/public/img/icon/excel.svg" width="70px" height="70px" alt="icon Excel">
+          </div>
+        </div>
+        <div class="card-body">
+
+          <p class="card-text text-center">DiemSo.xlsx</p>
+
+        </div>
+      </div>
+    </li>
+    
+ 
+    
+  </ul>
 </div>

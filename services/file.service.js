@@ -15,5 +15,15 @@ class FileService extends BaseService{
 
 
     }
+    async createFile(file){
+        if(file.folder_id=== null || file.folder_id=== undefined || file.folder_id.trim()===""){
+            return false;
+        }
+        sql=`
+        INSERT INTO file ( name, path, size, folder_id, file_category_id, user_id) VALUES
+        (${file.name},${file.path},${file.size},${file.folder_id},${file.file_category_id},${file.user_id})`
+         await super.executeQuery(sql);
+         return true;
+    }
 }
 module.exports = FileService

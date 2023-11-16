@@ -1,4 +1,4 @@
-console.log("nhan file dropzone")
+
 Dropzone.options.uploadDropzone = {
   paramName: "file",
   method:"post",
@@ -16,7 +16,7 @@ Dropzone.options.uploadDropzone = {
     this.on("success", function(file, response) {
       // Xử lý khi tải lên thành công
       console.log("Upload success:", response);
-      alert("Upload success: " + response.message);
+      
     });
 
     this.on("error", function(file, response,) {
@@ -27,7 +27,7 @@ Dropzone.options.uploadDropzone = {
 
     this.on("sending", function(file, xhr, formData) {
       // Thêm bất kỳ dữ liệu nào bạn muốn gửi đi cùng với file
-      formData.append("idFolder",2);
+      formData.append("idFolder",currentFolderId);
     });
   }
 };

@@ -16,5 +16,9 @@ const Folder= require("../models/folder.model");
  
 
     }
+    async getFolderById(id){
+        var sql= `SELECT * FROM folder WHERE folder.id=${id}`
+        return await super.executeQuery(sql)
+    }
  }
  module.exports= FolderService
